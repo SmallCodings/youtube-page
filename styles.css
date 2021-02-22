@@ -117,13 +117,67 @@ body {
 
 .fa{
     font-size: 1.5em !important; /*size whatever you like*/
-}
-
-.fa:hover {
     cursor: pointer;
 }
 
 hr {
     margin: 0;
     padding: 0;
+    border-top: 1px solid #c2c2c2;
+}
+
+#description-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#profile-picture-container {
+    margin-top: 1em;
+}
+
+#profile-name-container {
+    margin-left: 1em;
+    margin-top: 1.5em;
+}
+
+#profile-picture {
+    border-radius: 75px;
+    cursor: pointer;
+}
+
+#profile-name {
+    font-weight: 550;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    color: #030303;
+    cursor: pointer;
+}
+
+#profile-subscribers {
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.2em;
+    color: #606060;
+}
+
+#profile-description-container {
+    margin-top: 1.5em;
+}
+
+.profile-description {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.4em;
+}
+
+#show-more {
+    color: #606060;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
 }
