@@ -10,6 +10,11 @@ body {
     background-color: rgb(248, 248, 248);
 }
 
+footer {
+    height: 10em;
+    width: 100%;
+}
+
 #nav-container {
     background: white;
     width: 100%;
@@ -62,6 +67,7 @@ body {
     border-radius: 2px;
     padding-right: 5em;
     margin-left: 5em;
+    outline: none;
 }
 
 #youtube-search-button {
@@ -69,6 +75,8 @@ body {
     margin: 0;
     border: 1px solid #c4c4c4;
     border-left: none;
+    cursor: pointer;
+    outline: none;
 }
 
 #youtube-profile-container {
@@ -88,19 +96,21 @@ body {
 #youtube-profile-container .fa {
     color: #606060;
     font-size: 1.2em !important;
+    cursor: pointer;
 }
 
 #youtube-profile-container .material-icons {
     color: #606060;
     margin: 0 1.5em;
     font-size: 1.6em !important;
+    cursor: pointer;
 }
 
 #user-pfp {
     width: 35%;
     border-radius: 75px;
     margin: 0;
-    margin-left: 1em;
+    margin-left: 0.5em;
     padding: 0;
 }
 
@@ -121,13 +131,88 @@ body {
     flex-grow: 2;
 }
 
-#thumbnail-container {
-    background: yellow;
+#aside-container {
+    display: flex;
+    flex-direction: column;
     max-width: 385px;
     width: 35%;
     height: auto;
     margin: 2em 0.5em;
     flex-grow: 1;
+}
+
+.thumbnail-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.thumbnail-image-container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-right: 0.5em;
+    max-width: 168px;
+    min-width: 168px;
+    height: auto;
+}
+
+.thumbnail-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.thumbnail-title {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: #3b3b3b;
+    font-weight: bold;
+}
+
+.thumbnail-creator {
+    font-size: 13px;
+    color: #606060;
+    padding: 0;
+    margin: 0.4em 0 0.2em 0;
+}
+
+.thumbnail-additional {
+    font-size: 13px;
+    color: #606060;
+    padding: 0;
+    margin: 0;
+}
+
+#thumbnail-buttons {
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+#thumbnail-buttons-selected {
+    border: 1px solid rgb(158, 158, 158);
+    padding: 0.6em 1em;
+    border-radius: 15px;
+    background-color: rgb(117, 117, 117);
+    color: rgb(231, 231, 231);
+    outline: none;
+    cursor: pointer;
+    margin-right: 0.3em;
+}
+
+.thumbnail-buttons-unselected {
+    border: 1px solid rgb(158, 158, 158);
+    padding: 0.6em 1em;
+    border-radius: 15px;
+    color: rgb(59, 59, 59);
+    outline: none;
+    cursor: pointer;
+    margin-right: 0.3em;
 }
 
 #video-container {
@@ -189,6 +274,9 @@ body {
 #like-dislike-interaction-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 #like-dislike-bar {
@@ -226,6 +314,39 @@ body {
     font-size: 1.4em !important;
     margin: auto 0.7em;
     color: #606060;
+    cursor: pointer;
+}
+
+.fa-share {
+    font-size: 1.5em;
+    color: #606060;
+    cursor: pointer;
+    margin: 0;
+    margin-top: 0.7em;
+    margin-left: 1.2em;
+    padding: 0;
+    font-weight: bold;
+}
+
+.fa-save {
+    font-size: 1.5em;
+    color: #606060;
+    cursor: pointer;
+    margin: 0;
+    margin-top: 0.7em;
+    margin-left: 1em;
+    padding: 0;
+    font-weight: bold;
+}
+
+.fa-ellipsis-h {
+    font-size: 1.5em;
+    color: #606060;
+    cursor: pointer;
+    margin: 0;
+    margin: 1.2em 0.5em 0 1.5em;
+    padding: 0;
+    font-weight: bold;
 }
 
 hr {
@@ -283,6 +404,10 @@ hr {
     margin-top: 0.4em;
 }
 
+.profile-description a {
+    text-decoration: none;
+}
+
 #name-title-container {
     display: flex;
     flex-direction: row;
@@ -290,7 +415,7 @@ hr {
 
 #show-more {
     color: #606060;
-    margin-top: 3em;
+    margin-top: 2.5em;
     margin-bottom: 1.5em;
     font-size: 13px;
     font-weight: bold;
@@ -306,4 +431,12 @@ hr {
     color: #606060;
     font-weight: bold;
     padding: 1em;
+    cursor: pointer;
+    outline: none;
+}
+
+@media (max-width: 1100px) {
+    #aside-container {
+        display: none;
+    }
 }
