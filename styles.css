@@ -16,6 +16,92 @@ body {
     height: 60px;
     position: fixed;
     z-index: 3;
+    display: flex;
+    justify-content: space-between;
+}
+
+#youtube-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-left: 1em;
+}
+
+#hamburger-icon {
+    height: 50%;
+    cursor: pointer;
+}
+
+#youtube-logo {
+    height: 80%;
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+#youtube-searchbar-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 0 0.5em;
+    flex-grow: 2;
+}
+
+#youtube-searchbar-container form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#youtube-searchbar {
+    width: 50%;
+    height: 2em;
+    font-size: 14px;
+    color: #929292;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    padding-right: 5em;
+    margin-left: 5em;
+}
+
+#youtube-search-button {
+    padding: 0 2em;
+    margin: 0;
+    border: 1px solid #c4c4c4;
+    border-left: none;
+}
+
+#youtube-profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#youtube-profile-container a {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#youtube-profile-container .fa {
+    color: #606060;
+    font-size: 1.2em !important;
+}
+
+#youtube-profile-container .material-icons {
+    color: #606060;
+    margin: 0 1.5em;
+    font-size: 1.6em !important;
+}
+
+#user-pfp {
+    width: 35%;
+    border-radius: 75px;
+    margin: 0;
+    margin-left: 1em;
+    padding: 0;
 }
 
 #main-container {
@@ -115,9 +201,31 @@ body {
     margin-left: 1em;
 }
 
-.fa{
+.fa-thumbs-up{
     font-size: 1.5em !important; /*size whatever you like*/
     cursor: pointer;
+}
+
+.fa-thumbs-down{
+    font-size: 1.5em !important; /*size whatever you like*/
+    cursor: pointer;
+}
+
+.subscribe-bell{
+    font-size: 1.2em !important; /*size whatever you like*/
+    cursor: pointer;
+    margin: 0 0.5em;
+    color: #606060;
+}
+
+.fa-search {
+    color: #606060;
+}
+
+.fa-microphone {
+    font-size: 1.4em !important;
+    margin: auto 0.7em;
+    color: #606060;
 }
 
 hr {
@@ -129,6 +237,8 @@ hr {
 #description-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 #profile-picture-container {
@@ -173,6 +283,11 @@ hr {
     margin-top: 0.4em;
 }
 
+#name-title-container {
+    display: flex;
+    flex-direction: row;
+}
+
 #show-more {
     color: #606060;
     margin-top: 3em;
@@ -180,4 +295,15 @@ hr {
     font-size: 13px;
     font-weight: bold;
     cursor: pointer;
+}
+
+#subscribe-container {
+    margin-top: 1.5em;
+}
+
+#subscribe-button {
+    border: 0px solid gray;
+    color: #606060;
+    font-weight: bold;
+    padding: 1em;
 }
